@@ -1,0 +1,26 @@
+{
+  "name": "doson-web",
+  "version": "1.0.0",
+  "description": "doson is a report watcher for better ui and reaction",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAIAE/doson.git"
+  },
+  "keywords": [
+    "report",
+    "watcher"
+  ],
+  "author": "IAIAE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IAIAE/doson/issues"
+  },
+  "homepage": "https://github.com/IAIAE/doson#readme",
+  "devDependencies": {
+    "@types/node": "^9.3.0"
+  }
+}

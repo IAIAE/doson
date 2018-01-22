@@ -1,0 +1,45 @@
+{
+  "name": "doson-server",
+  "version": "1.0.0",
+  "description": "doson is a report watcher for better ui and reaction",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "node dist/server.js",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "serve-debug": "nodemon --inspect dist/server.js",
+    "watch-debug": "concurrently -k -p \"[{name}]\" -n \"TypeScript,NodeServer\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run serve-debug\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAIAE/doson.git"
+  },
+  "keywords": [
+    "report",
+    "watcher"
+  ],
+  "author": "IAIAE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IAIAE/doson/issues"
+  },
+  "homepage": "https://github.com/IAIAE/doson#readme",
+  "devDependencies": {
+    "@types/node": "^9.3.0",
+    "chai": "^4.1.2",
+    "concurrently": "^3.5.1",
+    "jest": "^21.2.1",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.13.0",
+    "shelljs": "^0.7.7",
+    "supertest": "^3.0.0",
+    "ts-jest": "^21.2.4",
+    "ts-node": "^4.0.2",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
